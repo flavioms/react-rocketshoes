@@ -28,7 +28,7 @@ function* addToCard({ id }) {
       priceFormatted: formatPrice(response.data.price),
     };
     yield put(addToCartSuccess(data));
-    history.puch('/cart');
+    history.push('/cart');
   }
 }
 
